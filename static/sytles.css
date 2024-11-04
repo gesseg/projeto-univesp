@@ -1,0 +1,147 @@
+/* Geral */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fb;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #2d2d2d;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: none;
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #3a3f58;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f7f8fc;
+}
+
+tr:hover {
+    background-color: #eceff5;
+}
+
+/* Links e Botões */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4c6ef5;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    margin: 5px 0;
+    box-shadow: 0 4px 6px rgba(76, 110, 245, 0.2);
+}
+
+a:hover {
+    background-color: #4056d3;
+    box-shadow: 0 6px 8px rgba(76, 110, 245, 0.3);
+}
+
+/* Formulários */
+form {
+    max-width: 500px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin-top: 15px;
+    display: block;
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #4c6ef5;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 110, 245, 0.3);
+}
+
+button {
+    background-color: #4c6ef5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(76, 110, 245, 0.2);
+}
+
+button:hover {
+    background-color: #4056d3;
+    box-shadow: 0 6px 8px rgba(76, 110, 245, 0.3);
+}
+
+/* Links de ação */
+a.button-link {
+    background-color: #34a853;
+}
+
+a.button-link:hover {
+    background-color: #2a8c47;
+}
+
+/* Ajustes de Layout */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.table-actions {
+    display: flex;
+    gap: 10px;
+}

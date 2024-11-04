@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adicionar Empréstimo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Adicionar Empréstimo</h1>
+    <form method="post">
+        <label for="nome_colaborador">Nome do Colaborador:</label>
+        <input type="text" id="nome_colaborador" name="nome_colaborador" required>
+
+        <label for="itens">Itens para Empréstimo:</label>
+        <select id="itens" name="itens" multiple required>
+            <option value="Avental">Avental</option>
+            <option value="Calçado">Calçado</option>
+            <option value="Capacete de Segurança">Capacete de Segurança</option>
+            <option value="Luvas de Proteção">Luvas de Proteção</option>
+            <option value="Máscara">Máscara</option>
+            <option value="Óculos de Proteção">Óculos de Proteção</option>
+            <option value="Protetor Auricular">Protetor Auricular</option>
+        </select>
+
+        <button type="submit">Adicionar Empréstimo</button>
+    </form>
+    <a href="{{ url_for('index') }}" class="button-link">Voltar</a>
+</body>
+</html>

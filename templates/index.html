@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestão de Empréstimos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Gestão de Empréstimos</h1>
+    <a href="{{ url_for('add_emprestimo') }}" class="button-link">Adicionar Novo Empréstimo</a>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nome do Colaborador</th>
+            <th>Itens Emprestados</th>
+            <th>Ações</th>
+        </tr>
+        {% for emprestimo in emprestimos %}
+        <tr>
+            <td>{{ emprestimo.id }}</td>
+            <td>{{ emprestimo.nome_colaborador }}</td>
+            <td>{{ emprestimo.itens }}</td>
+            <td class="table-actions">
+                <a href="{{ url_for('edit_emprestimo', id=emprestimo.id) }}" class="button-link">Editar</a>
+                <form action="{{ url_for('delete_emprestimo', id=emprestimo.id) }}" method="post" style="display:inline;">
+                    <button type="submit">Excluir</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
